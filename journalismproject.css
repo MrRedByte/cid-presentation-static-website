@@ -1,0 +1,91 @@
+*,
+*::after,
+*::before {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: hsl(229, 75.9%, 15.9%, 1);
+}
+
+.container {
+  font-family: 'Varela Round', sans-serif;
+  min-height: 100vh;
+  color: var(--dark);
+  padding-top: 2rem;
+	user-select: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav {
+  background-color: hsl(229, 55.9%, 98.9%, 1);
+  color: var(--dark);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  box-shadow: 1px 4px 15px hsl(229, 75.9%, 25.9%, 0.5);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  list-style: none;
+  font-size: 1.4rem;
+}
+
+#progress-bar {
+  --progress: 0;
+  height: 6px;
+  width: var(--progress);
+  background-color: var(--dark);
+}
+
+article {
+  width: min(1000px, 100%);
+  padding: 4rem 2rem;
+  display: grid;
+  grid-gap: 2rem;
+  place-items: center;
+  margin: auto;
+}
+
+article>* {
+  box-shadow: 1px 4px 15px hsl(229, 75.9%, 25.9%, 0.5);
+  background-color: hsl(229, 55.9%, 98.9%, 1);
+  width: 100%;
+  border-radius: 1rem;
+}
+
+h1 {
+  font-size: clamp(1.4rem, 0.38181828rem + 4.654545vw, 3rem);
+  text-align: center;
+  padding: 1rem 1.4rem;
+}
+
+article>div {
+  padding: 4rem;
+}
+
+h2 {
+  margin: 1em 0 0.3em;
+}
+
+article ul {
+  margin: 1em 1.5em;
+}
+
+a{
+	text-decoration: none;
+	color: var(--dark);
+}
